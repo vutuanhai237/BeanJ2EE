@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+ 
+ 	<bean id="studentBean" class="com.tma.week3Practice_2.StudentBean" />
+ 	<bean id="studentBean2" class="com.tma.week3Practice_2.StudentBean">
+ 		<property name="name" value="Hai 2" />
+ 		<property name="age" value= "21" />
+ 		<property name="province" value="Binh Dinh" />
+ 		<property name="classes" value="12C2" />
+ 	</bean>
+ 	<bean id="scoreBean" class="com.tma.week3Practice_2.ScoreBean">
+ 		<property name="name" value="lich su" />
+ 		<property name="point" value= "9.8" />
+ 	</bean>
+ 
+
+</beans>
