@@ -5,14 +5,12 @@ import java.util.Scanner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
 
 import com.tma.week3Practice_2.model.StudentBean;
 import com.tma.week3Practice_2.validation.StudentValidation;
 
 @ImportResource("classpath:BeanConfiguration.xml")
-@ComponentScan({ "com.tma.week3Practice_2.model" })
 @SpringBootApplication
 public class Application {
 
